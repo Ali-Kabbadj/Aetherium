@@ -1,0 +1,22 @@
+{
+  "name": "aetherium",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "npm@11.6.2",
+  "scripts": {
+    "//": "web frontend commands",
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "lint": "turbo lint",
+    "dev:web": "turbo dev --filter=aetherium-frontend-web",
+    "build:web": "turbo build --filter=aetherium-frontend-web",
+    "lint:web": "turbo lint --filter=aetherium-frontend-web"
+  },
+  "devDependencies": {
+    "turbo": "^2.5.8"
+  },
+  "workspaces": [
+    "apps/**/*",
+    "packages/**/*"
+  ]
+}
