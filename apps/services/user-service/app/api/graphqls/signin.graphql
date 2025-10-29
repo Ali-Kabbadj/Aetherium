@@ -1,0 +1,5 @@
+# Extends the root Query with operations related to the sign-in/sign-up process.
+
+extend type Query {
+  isEmailAvailable(email: String!): Boolean!
+}

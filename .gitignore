@@ -2,3 +2,41 @@
 package-lock.json
 /node_modules
 **/.turbo
+
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Code coverage profiles and other test artifacts
+*.out
+coverage.*
+*.coverprofile
+profile.cov
+
+# Dependency directories (remove the comment below to include it)
+# vendor/
+
+# env file
+**/.env
+
+# Editor/IDE
+# .idea/
+# .vscode/
+config.db
+cache
+
+
+#go specific
+**/go.work
+**/go.work.sum
+**/go.sum
+**/go.mod
+**/prelude.generated.go
+**/root_.generated.go
+**/models_gen.go
+**/__debug_bin.exe

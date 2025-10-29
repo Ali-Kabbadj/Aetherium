@@ -3,6 +3,50 @@
     {
       "name": "frontend-web",
       "path": "apps/frontend/web"
+    },
+    {
+      "name": "user-service",
+      "path": "apps/services/user-service"
+    },
+    {
+      "name": "shared-go",
+      "path": "shared/go"
     }
-  ]
+  ],
+  "launch": {
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "User-Service",
+        "type": "go",
+        "request": "launch",
+        "mode": "debug",
+        "program": "${workspaceFolder:user-service}/cmd",
+        "console": "internalConsole"
+      }
+    ]
+  },
+  "settings": {
+    "gopls": {
+      "build.buildFlags": ["-tags=tools"]
+    },
+    "workbench.editor.enablePreview": false,
+    "files.autoSave": "onFocusChange",
+    "git.openRepositoryInParentFolders": "always",
+    "files.exclude": {
+      "**/.git": true,
+      "**/node_modules": true,
+      "**/.DS_Store": true,
+      "**/__pycache__": true,
+      "**/.pytest_cache": true,
+      "**/.venv": true,
+      "**/media": true,
+      "**/node_modules/**": true,
+      "**/.git/**": true,
+      "**/dist/**": true,
+      "vcpkg_installed": true,
+      "vcpkg": true,
+      "**/__init__.py": true
+    }
+  }
 }
